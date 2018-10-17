@@ -1,4 +1,6 @@
 import "babel-polyfill";
+import React from "react";
+import ReactDOM from "react-dom";
+import { App } from "./App";
 
-const main = document.getElementsByTagName("main")[0];
-main.innerHTML = `<h3>${main.innerHTML}</h3>`;
+ReactDOM.render(<App />, document.getElementById("app-root"));
